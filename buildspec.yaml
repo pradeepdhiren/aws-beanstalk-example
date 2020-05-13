@@ -1,10 +1,10 @@
 version: 0.2
 phases:
-  pre-build:
+  pre_build:
     commands:
       - echo "Entered build phase"
       - mvn clean prepare-package war:explode
-  post-build:
+  post_build:
     commnads:
       - echo "Entered the post-build phase"
       - mv target/deploy ./
